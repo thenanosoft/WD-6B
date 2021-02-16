@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="Web Programming Preparation" />
+        <meta name="author" content="" />
+        <title>Web Programming | Nanosoft</title>
+        <link rel="icon" type="image/x-icon" href="assets/img/logo.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand js-scroll-trigger" href="https://thenanosoft.com">Nanosoft</a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#html">HTML</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#css">CSS</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#JavaScript">JavaScript</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#javascript">PHP</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#wordpress">WordPress</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead">
+            <div class="container d-flex h-100 align-items-center">
+                <div class="mx-auto text-center">
+                    <h1 class="mx-auto text-uppercase">Web Programming</h1>
+                    <h2 class="text-white-50 mx-auto mt-2 mb-5">Learn basics about HTML, CSS, JavaScript, PHP &amp; Wordpress.</h2>
+                    <a class="btn btn-primary js-scroll-trigger" href="#html">Get Started</a>
+                </div>
+            </div>
+        </header>
+        
+        <!-- HTML -->
+        <section class="block-section bg-light" id="html">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-10 mx-auto">
+                        <h2>HTML?</h2>
+                        <p class="lead">HTML document is a plain text file that has been encoded using <code>Hypertext Markup Language</code> (HTML) so that it appears nicely formatted in a Web browser.</p>
+                        <br>
+                        
+                        <h2>HTML Syntax</h2>
+<pre>
+    &lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+        &lt;head&gt;
+            &lt;title&gt;Page Title&lt;/title&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+            &lt;h1&gt;My First Heading&lt;/h1&gt;
+            &lt;p&gt;My first paragraph.&lt;/p&gt;
+        &lt;/body&gt;
+    &lt;/html&gt;
+</pre>
+                       <br>
+                       <h2>Syntax Exaplanation</h2>
+                       <ul>
+                           <li><code>&lt;!DOCTYPE html&gt;</code> define the version of HTML.</li>
+                           <li><code>&lt;html&gt;</code> root element of HTML page.</li>
+                           <li><code>&lt;head&gt;</code> may contains stylesheets &amp; meta information of HTML page.</li>
+                           <li><code>&lt;title&gt;</code> define page title (which is shown in the browser's title bar).</li>
+                           <li><code>&lt;body&gt;</code> body is a container for all the visible contents, such as headings, paragraphs, images, videos, hyperlinks, tables, lists, forms etc.</li>
+                           <li><code>&lt;h1&gt;</code> HTML heading tag.</li>
+                           <li><code>&lt;p&gt;</code> HTML paragraph tag.</li>
+                       </ul>
+                        
+                        <br>
+                        <h2>HTML Elements</h2>
+                        <p class="lead">An element in HTML usually consist of a <b>start tag</b> &lt;tag name&gt;, <b>close tag</b> &lt;/tag name&gt; and content inserted between them. Technically, an element is a collection of <b>start tag</b>, <b>attributes</b>, <b>end tag</b>, content between them.</p>
+                        
+                        <span class="note"><mark>Note:</mark> Some HTML elements have no content (like the &lt;br&gt; element). These elements are called empty elements. Empty elements do not have an end tag!</span>
+                        
+                        <br>
+                        <code>Element Examples:</code>
+<pre>
+    &lt;h1&gt;My Heading&lt;/h1&gt;
+    &lt;p&gt;My Paragraph.&lt;/p&gt;
+</pre>
+                        
+                        <br>
+                        <h2>HTML Tags</h2>
+                        <p class="lead">HTML tags are like <b>keywords</b> which defines that how web browser will format and display the content.</p>
+                        
+                        <code>Tag Examples:</code>
+<pre>
+    &lt;h1&gt;
+    &lt;p&gt;
+</pre>               
+                        <br>
+                        <h2>HTML Attributes</h2>
+                        <p class="lead">Attributes are special words which provide <b>additional information</b> about the elements. attribute should always be applied with opening/start tag. attribute should be applied with its <b>name</b> and <b>value</b>. we can use multiple attribute in single element with space between two attributes.</p>
+                        
+                        <code>Attribute Examples:</code>
+<pre>
+    &lt;input type="text" /&gt;
+    &lt;marquee direction="left" bdcolor="red"&gt;My Marquee.&lt;/marquee&gt;
+</pre>
+                        <br>
+                        <h2>HTML Meta Tags</h2>
+                        <p class="lead">The &lt;meta&gt; tag defines metadata about an HTML document. Metadata is data (information) about data. &lt;meta&gt; tags always go inside the &lt;head&gt; element, and are typically used to specify language, character set, page description, keywords, author of the document, and viewport settings. Metadata will not be displayed on the page, but browser read that. Metadata is SEO ranking fector.</p>
+                        
+                        <code>Meta Tag Examples:</code>
+<pre>
+&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;meta name="description" content="Free Web tutorials"&gt;
+  &lt;meta name="keywords" content="HTML, CSS, JavaScript"&gt;
+  &lt;meta name="author" content="John Doe"&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+&lt;/head&gt;
+</pre>
+                        <b>
+                        <h2>Event Attributes</h2>
+                        <p class="lead">HTML has the ability to let events trigger actions in a browser, like starting a JavaScript when a user clicks on an element.</p>
+                        <p>HTML have many types of event attributes:</p>
+                        
+                        <ul>
+                            <li>Window Event</li>
+                            <li>Form Events</li>
+                            <li>Keyboard Events</li>
+                            <li>Mouse Events</li>
+                            <li>Drag Events</li>
+                            <li>Clipboard Events</li>
+                            <li>Media Events</li>
+                            <li>Misc Events</li>
+                        </ul>
+                        
+                        <code>Event Attribute Examples:</code>
+<pre>
+&lt;body onresize="alert("User resize the screen size");"&gt;
+&lt;input oninput="myFunction()"&gt;
+&lt;input type="text" onkeydown="keyDownFunction()"&gt;
+&lt;input ondblclick="alert("User Perform Double Click Action");"&gt;
+&lt;input type="text" oncopy="alert("You text has been copied!")" value="Try to copy this text"&gt;
+</pre>
+                       
+                       <br><br>
+                       <h2>HTML Error Messages</h2>
+                       <p class="lead">When a browser requests a service from a web server, an error might occur, and the server might return an error code like "404 Not Found".
+                       But these messages are something called HTTP status messages. In fact, the server always returns a message for every request. The most common message is 200 OK.</p>
+                       
+                       <br>
+                       <b>1xx: Information</b>
+                       <ul>
+                           <li>100 Continue</li>
+                           <li>101 Switching Protocols</li>
+                           <li>103 Checkpoint</li>
+                       </ul>
+                       
+                       <br>
+                       <b>2xx: Successful</b>
+                       <ul>
+                           <li>200 OK</li>
+                           <li>201 Created</li>
+                           <li>202 Accepted</li>
+                           <li>203 Non-Authoritative Information</li>
+                           <li>204 No Content</li>
+                           <li>205 Reset Content</li>
+                           <li>206 Partial Content</li>
+                       </ul>
+                       
+                       <br>
+                       <b>3xx: Redirection</b>
+                       <ul>
+                           <li>300 Multiple Choices</li>
+                           <li>301 Moved Permanently</li>
+                           <li>302 Found</li>
+                           <li>303 See Other</li>
+                           <li>304 Not Modified</li>
+                           <li>306 Switch Proxy</li>
+                           <li>307 Temporary Redirect</li>
+                           <li>308 Resume Incomplete</li>
+                       </ul>
+                       
+                       <br>
+                       <b>4xx: Client Error</b>
+                       <ul>
+                           <li>400 Bad Request</li>
+                           <li>401 Unauthorized</li>
+                           <li>402 Payment Required</li>
+                           <li>403 Forbidden</li>
+                           <li>404 Not Found</li>
+                           <li>405 Method Not Allowed</li>
+                           <li>406 Not Acceptable</li>
+                           <li>407 Proxy Authentication Required</li>
+                           <li>408 Request Timeout</li>
+                           <li>409 Conflict</li>
+                           <li>410 Gone</li>
+                           <li>411 Length Required</li>
+                           <li>412 Precondition Failed</li>
+                           <li>413 Request Entity Too Large</li>
+                           <li>414 Request-URI Too Long</li>
+                           <li>415 Unsupported Media Type</li>
+                           <li>416 Requested Range Not Satisfiable</li>
+                           <li>417 Expectation Failed</li>
+                       </ul>
+                       
+                       <br>
+                       <b>5xx: Server Error</b>
+                       <ul>
+                           <li>500 Internal Server Error</li>
+                           <li>501 Not Implemented</li>
+                           <li>502 Bad Gateway</li>
+                           <li>503 Service Unavailable</li>
+                           <li>504 Gateway Timeout</li>
+                           <li>505 HTTP Version Not Supported</li>
+                           <li>511 Network Authentication Required</li>
+                       </ul>
+                       
+                       <div class="row d-flex align-items-center">
+                           <div class="col-lg-4 mx-auto d-block">
+                               <button class="btn btn-success">
+                                   <a href="https://www.w3schools.com/tags/default.asp" text-white target="_blank" class="text-light" style="text-decoration: none;">Click to View HTML all tags.</a>
+                               </button>
+                           </div>
+                            <div class="col-lg-4 mx-auto">
+                               <button class="btn btn-info">
+                                   <a href="https://www.w3schools.com/tags/default.asp" text-white target="_blank" class="text-light" style="text-decoration: none;">View Error Messages Detail</a>
+                               </button>
+                           </div>
+                       </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- CSS -->
+        <section class="block-section bg-dark text-light" id="css">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-10 mx-auto">
+                        <h2>CSS?</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- JavaScript -->
+        <section class="block-section bg-light" id="javascript">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-10 mx-auto">
+                        <h2>JavaScript?</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- PHP -->
+        <section class="block-section bg-dark text-light" id="php">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-10 mx-auto">
+                        <h2>PHP?</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Wordpress -->
+        <section class="block-section bg-light" id="wordpress">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-10 mx-auto">
+                        <h2>WordPress?</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Contact-->
+        <section class="contact-section bg-black" id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <div class="card py-4 h-100">
+                            <div class="card-body text-center">
+                                <i class="fas fa-map-marked-alt text-primary mb-2"></i>
+                                <h4 class="text-uppercase m-0">Address</h4>
+                                <hr class="my-4" />
+                                <div class="small text-black-50">Rahim Yar Khan, Punjab, Pakistan.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <div class="card py-4 h-100">
+                            <div class="card-body text-center">
+                                <i class="fas fa-envelope text-primary mb-2"></i>
+                                <h4 class="text-uppercase m-0">Email</h4>
+                                <hr class="my-4" />
+                                <div class="small text-black-50"><a href="mailto:support@thenanosoft.com">support@thenanosoft.com</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <div class="card py-4 h-100">
+                            <div class="card-body text-center">
+                                <i class="fas fa-mobile-alt text-primary mb-2"></i>
+                                <h4 class="text-uppercase m-0">Phone</h4>
+                                <hr class="my-4" />
+                                <div class="small text-black-50"><a href="tel:+923050000000">+92 305 000 0000</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="social d-flex justify-content-center">
+                    <a class="mx-2" href="https://github.com/thenanosoft"><i class="fab fa-github"></i></a>
+                    <a class="mx-2" href="https://thenanosoft.com"><i class="fab fa-google"></i></a>
+                    <a class="mx-2" href="https://twitter.com/thenanosoft"><i class="fab fa-twitter"></i></a>
+                    <a class="mx-2" href="https://facebook.com/thenanosoft"><i class="fab fa-facebook-f"></i></a>
+                    <a class="mx-2" href="https://instagram.com/thenanosoft"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </section>
+        <!-- Footer-->
+        <footer class="footer bg-black small text-center text-white-50"><div class="container">All right reserved | Nanosoft</div></footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Third party plugin JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
