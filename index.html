@@ -843,6 +843,226 @@ document.write(str);
                 <div class="row">
                     <div class="col-lg-10 mx-auto">
                         <h2>PHP?</h2>
+                        <p class="lead">
+                            PHP is a server scripting language, and a powerful tool for making dynamic and interactive Web pages.
+                        </p>
+                        
+                        <ul>
+                            <li>PHP is an acronym for "PHP: Hypertext Preprocessor"</li>
+                            <li>PHP is a widely-used, open source scripting language</li>
+                            <li>PHP scripts are executed on the server</li>
+                            <li>PHP is free to download and use</li>
+                            <li>PHP 7 is the latest stable release.</li>
+                        </ul>
+                        
+                        <br>
+                        <div>
+                           <h2>PHP File?</h2>
+                           <ul>
+                               <li>PHP files can contain text, HTML, CSS, JavaScript, and PHP code.</li>
+                               <li>PHP code is executed on the server, and the result is returned to the browser as plain HTML.</li>
+                               <li>PHP files have extension ".php".</li>
+                           </ul>
+                        </div>
+                        
+                        <br>
+                        <div>
+                            <h2>PHP Do?</h2>
+                            <ul>
+                                <li>PHP can generate dynamic page content</li>
+                                <li>PHP can create, open, read, write, delete, and close files on the server</li>
+                                <li>PHP can collect form data</li>
+                                <li>PHP can send and receive cookies</li>
+                                <li>PHP can add, delete, modify data in your database</li>
+                                <li>PHP can be used to control user-access</li>
+                                <li>PHP can encrypt data</li>
+                            </ul>
+                        </div>
+                        
+                        <br>
+                        <div>
+                            <h2>Install PHP on local system</h2>
+                            <p class="lead">Some tools required for installation of PHP.</p>
+                            <ul>
+                                <li>PHP</li>
+                                <li>Apache Server</li>
+                                <li>MySQL Database</li>
+                                <li>Text Editor</li>
+                                <li>Browser</li>
+                            </ul>
+                            <p>PHP, Apache, MySQL all are available in XAMPP or WAMP server.</p>
+                        </div>
+                        
+                        <br>
+                        <div>
+                            <h2>What is Apache?</h2>
+                            <p class="lead">Apache is an open-source and free web server software. The official name is Apache HTTP Server. Apache is a cross-platform software, therefore it works on both Unix and Windows servers. It allows website owners to serve content on the web — hence the name “web server.” It’s one of the oldest and most reliable web servers, with the first version released more than 20 years ago, in 1995.
+                            
+                            <br>
+                            we call Apache a web server, it is not a physical server, but rather a software that runs on a server. Its job is to establish a connection between a server and the browsers of website visitors.
+                            
+                            
+                            </p>
+                        </div>
+                        
+                        <br>
+                        <div>
+                            <h2>WAMP &amp; XAMPP stands for?</h2>
+                            <p class="lead"><b class="def-heading">WAMP: </b>Windows, Apache, MySQL, PHP</p>
+                            <p class="lead"><b class="def-heading">XAMPP: </b>Cross-Platform, Apache, MySQL, PHP and Perl</p>
+                        </div>
+                        
+                        <br>
+                        <div>
+                            <h2>PHP Syntax</h2>
+                            <p class="lead"><b class="def-heading">Recommended Use: </b> &lt;? php ?&gt; </p>
+<pre class="def-topic">
+&lt;body&gt;
+    &lt;ul&gt;
+        &lt;?php for($i=1;$i&lt;=5;$i++){ ?&gt;
+            &lt;li&gt; Menu Item &lt;?php echo $i; ?&gt; &lt;/li&gt;
+        &lt;?php } ?&gt;
+    &lt;ul&gt;
+&lt;/body&gt;
+</pre>
+output:
+<pre class="def-topic">
+Menu Item 1
+Menu Item 2
+Menu Item 3
+Menu Item 4
+Menu Item 5
+</pre>
+                            <p class="lead"><b class="def-heading">Short Tag: </b> &lt;?= ?&gt;</p>
+                            <p>If you want to shorten your code as much as possible, you can go for the short_tags option. This will save you from typing &lt;?php at the beginning of the code, shortening it to just &lt;?. In order to enable this, you should update the php.ini file and turn the "short_tags" setting from "Off" to "On"</p>
+                            
+<pre class="def-topic">
+&lt;body&gt;
+    &lt;p&gt;Hello, today is &lt;?= date('Y/m/d H:i:s'); ?&gt;.&lt;/p&gt;
+&lt;/body&gt;
+</pre>
+output:
+<pre class="def-topic">
+2012/03/06 17:33:07
+</pre>
+                            
+                        </div>
+                        
+                        <br>
+                        <div>
+                            <h2>PHP Variables</h2>
+                            <p>Rules for PHP variables:</p>
+                               <ul>
+                                <li>A variable starts with the <code>$</code> sign, followed by the name of the variable</li>
+                                <li>A variable name must start with a letter <code>a,b,c,...,</code> or the underscore <code>_</code> character</li>
+                                <li>A variable name <b>cannot</b> start with a number <code>0,1,2,...</code></li>
+                                <li>A variable name can only contain alpha-numeric characters and underscores</li>
+                                <li>Variable names are case-sensitive (<code>$name</code> and <code>$Name</code> are two different variables)</li>
+                            </ul>
+                        </div>
+                        
+                        <br>
+                        <div>
+                            <h2>PHP echo &amp; print</h2>
+                            <p class="lead">With PHP, there are two basic ways to get output: <code>echo</code> and <code>print</code>.</p>
+                        <b>echo Example:</b>
+<pre class="def-topic">
+&lt;php
+$txt1 = "Learn Web Programming";
+$txt2 = "thenanosoft.github.io/WD-6B";
+$x = 5;
+$y = 4;
+
+echo "&lt;h2&gt;" . $txt1 . "&lt;/h2&gt;";
+echo "Study PHP at " . $txt2 . "&lt;br&gt;";
+echo $x + $y;
+?&gt;
+</pre>
+                       <b>echo Example:</b>
+<pre class="def-topic">
+&lt;php
+$txt1 = "Learn Web Programming";
+$txt2 = "thenanosoft.github.io/WD-6B";
+$x = 5;
+$y = 4;
+
+print "&lt;h2&gt;" . $txt1 . "&lt;/h2&gt;";
+print "Study PHP at " . $txt2 . "&lt;br&gt;";
+print $x + $y;
+?&gt;
+</pre>
+                        </div>
+                        
+                        <br>
+                        <div>
+                            <h2>PHP String Functions</h2>
+                            <div class="table-responsive ">
+                                <table class="table table-bordered text-light">
+                                    <tr>
+                                        <th>Function</th>
+                                        <th>Description</th>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td>strlen()</td>
+                                        <td>Return the Length of a String <br>
+                                        <code>
+                                            &lt;?php <br>
+                                            echo strlen("Hello world!"); // outputs 12<br>
+                                            ?&gt; <br>
+                                        </code>
+                                        </td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td>str_word_count()</td>
+                                        <td>Count Words in a String <br>
+                                        <code>
+                                            &lt;?php <br>
+                                            echo str_word_count("Hello world!"); // outputs 2 <br>
+                                            ?&gt; <br>
+                                        </code>
+                                        </td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td>strrev()</td>
+                                        <td>Reverse a String <br>
+                                        <code>
+                                            &lt;?php <br>
+                                            echo strrev("Hello world!"); // outputs !dlrow olleH <br>
+                                            ?&gt; <br>
+                                        </code>
+                                        </td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td>strpos()</td>
+                                        <td>Search For a Text Within a String <br>
+                                        <code>
+                                            &lt;?php <br>
+                                            echo strpos("Hello world!", "world"); // outputs 6 <br>
+                                            ?&gt; <br>
+                                        </code>
+                                        </td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td>str_replace()</td>
+                                        <td>Replace Text Within a String <br>
+                                        <code>
+                                            &lt;?php <br>
+                                            echo str_replace("world", "Dolly", "Hello world!"); // outputs Hello Dolly! <br>
+                                            ?&gt; <br>
+                                        </code>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <span class="note">
+                                   <mark>Note:</mark> For concatenation string we use ‘.’ dot operator
+                                </span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
