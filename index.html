@@ -26,6 +26,7 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#def">Definitions</a></li>
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#html">HTML</a></li>
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#css">CSS</a></li>
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#JavaScript">JavaScript</a></li>
@@ -42,10 +43,71 @@
                 <div class="mx-auto text-center">
                     <h1 class="mx-auto text-uppercase">Web Programming</h1>
                     <h2 class="text-white-50 mx-auto mt-2 mb-5">Learn basics about HTML, CSS, JavaScript, PHP &amp; Wordpress.</h2>
-                    <a class="btn btn-primary js-scroll-trigger" href="#html">Get Started</a>
+                    <a class="btn btn-primary js-scroll-trigger" href="#def">Get Started</a>
                 </div>
             </div>
         </header>
+        
+        <!-- Important Headings -->
+        <section class="block-section bg-dark text-light" id="def">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-10 mx-auto">
+                        <h2>Definitions</h2>
+                        <br><br>
+                        <h4 class="def-topic">Static Vs Dynamic Websites?</h4>
+                        <p class="lead">
+                            <b class="def-heading">Static: </b> contains web pages with fixed content coded in HTML and stored on a web server. It does not change, it stays the same, or "static" for every viewer of the site. A static website does not require web programming or database design.
+                            <br>
+                            <b class="def-heading">Dynamic: </b> A Dynamic Website (also referred to as a database-driven site) requires web programming and database design. A dynamic website contains information and content that changes, depending on factors.
+                        </p>
+                        
+                        <br>
+                        <h4 class="def-topic">Websites Vs Web-Applications?</h4>
+                        <p class="lead">
+                            <b class="def-heading">Websites: </b>Websites are one-way informational feeds, they do not allow viewers to interact or communicate back to the site.
+                            <br>
+                            <b class="def-heading">Web-Applications: </b>Web applications are websites with functionality and interactive elements. Gmail, Facebook, YouTube, Twitter, etc. are all web apps that are dynamic, and built for user engagement.
+                        </p>
+                        
+                        <br>
+                        <h4 class="def-topic">Hosting &amp; Domain</h4>
+                        <p class="lead">
+                            <b class="def-heading">Hosting: </b>Web hosting is the place where all the files of your website live.
+                            <br>
+                            <b class="def-heading">Domain: </b>Domain name is the address of your website that people type in the browser’s URL bar to visit your website.
+                        </p>
+                        
+                        <br>
+                        <h4 class="def-topic">POST Vs GET Method?</h4>
+                        <p class="lead">
+                           Both GET and POST method is used to transfer data from client to server in HTTP protocol.
+                        </p>
+                        <p>
+                            <b class="def-heading">POST: </b> The data sent to the server with POST is stored in the request body of the HTTP request:
+                        </p>
+                        <ul>
+                            <li>POST requests are never cached</li>
+                            <li>POST requests do not remain in the browser history</li>
+                            <li>POST requests cannot be bookmarked</li>
+                            <li>POST requests have no restrictions on data length</li>
+                        </ul>
+
+                            <br>
+                        <p>
+                            <b class="def-heading">GET: </b> GET method is used to appends form data to the URL in name or value pair.
+                        </p>
+                        
+                        <ul>
+                            <li>GET requests can be cached</li>
+                            <li>GET requests remain in the browser history</li>
+                            <li>GET requests can be bookmarked</li>
+                            <li>GET requests have length restrictions</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
         
         <!-- HTML -->
         <section class="block-section bg-light" id="html">
@@ -77,8 +139,8 @@
                            <li><code>&lt;head&gt;</code> may contains stylesheets &amp; meta information of HTML page.</li>
                            <li><code>&lt;title&gt;</code> define page title (which is shown in the browser's title bar).</li>
                            <li><code>&lt;body&gt;</code> body is a container for all the visible contents, such as headings, paragraphs, images, videos, hyperlinks, tables, lists, forms etc.</li>
-                           <li><code>&lt;h1&gt;</code> HTML heading tag.</li>
-                           <li><code>&lt;p&gt;</code> HTML paragraph tag.</li>
+                           <li><code>&lt;h1&gt;</code> heading tag.</li>
+                           <li><code>&lt;p&gt;</code> paragraph tag.</li>
                        </ul>
                         
                         <br>
@@ -110,11 +172,11 @@
                         <code>Attribute Examples:</code>
 <pre>
     &lt;input type="text" /&gt;
-    &lt;marquee direction="left" bdcolor="red"&gt;My Marquee.&lt;/marquee&gt;
+    &lt;marquee direction="left" bgcolor="red"&gt;My Marquee.&lt;/marquee&gt;
 </pre>
                         <br>
                         <h2>HTML Meta Tags</h2>
-                        <p class="lead">The &lt;meta&gt; tag defines metadata about an HTML document. Metadata is data (information) about data. &lt;meta&gt; tags always go inside the &lt;head&gt; element, and are typically used to specify language, character set, page description, keywords, author of the document, and viewport settings. Metadata will not be displayed on the page, but browser read that. Metadata is SEO ranking fector.</p>
+                        <p class="lead">The &lt;meta&gt; tag defines metadata about an HTML document. Metadata is data (information) about data. &lt;meta&gt; tags always go inside the &lt;head&gt; element, and are typically used to specify language, character set, page description, keywords, author of the document, and viewport settings. Metadata will not be displayed on the page, but browser read that. Metadata is also SEO ranking fector.</p>
                         
                         <code>Meta Tag Examples:</code>
 <pre>
@@ -154,7 +216,7 @@
                        <br><br>
                        <h2>HTML Error Messages</h2>
                        <p class="lead">When a browser requests a service from a web server, an error might occur, and the server might return an error code like "404 Not Found".
-                       But these messages are something called HTTP status messages. In fact, the server always returns a message for every request. The most common message is 200 OK.</p>
+                       But these messages are something called <b>HTTP status messages</b>. In fact, the server always returns a message for every request. The most common message is 200 OK.</p>
                        
                        <br>
                        <b>1xx: Information</b>
@@ -223,19 +285,79 @@
                            <li>505 HTTP Version Not Supported</li>
                            <li>511 Network Authentication Required</li>
                        </ul>
+                       <div class="col-lg-4 mx-auto">
+                               <button class="btn btn-info">
+                                   <a href="https://www.w3schools.com/tags/ref_httpmessages.asp" text-white target="_blank" class="text-light" style="text-decoration: none;">View Error Messages Detail</a>
+                               </button>
+                           </div>
                        
-                       <div class="row d-flex align-items-center">
+                       <br>
+                       
+                       <h4>HTML Tags</h4>
+                       <div class="table-responsive">
+                           <table class="table table-bordered">
+                              <label>Basic Tags</label>
+                               <thead>
+                                  <tr>
+                                       <th>Tag</th>
+                                       <th>Description</th>
+                                   </tr>
+                               </thead>
+                               
+                               <tbody class="html-tags">
+                                   <tr>
+                                       <td>&lt; !DOCTYPE &gt;</td>
+                                       <td>Define document type or version of HTML</td>
+                                   </tr>
+                                   <tr>
+                                       <td>&lt; html &gt;</td>
+                                       <td>Define html document</td>
+                                   </tr>
+                                   <tr>
+                                       <td>&lt; head &gt;</td>
+                                       <td>Contains metadata/information for the document</td>
+                                   </tr>
+                                   
+                                   <tr>
+                                       <td>&lt; title &gt;</td>
+                                       <td>Defines a title for the document</td>
+                                   </tr>
+                                   
+                                   <tr>
+                                       <td>&lt; body &gt;</td>
+                                       <td></td>
+                                   </tr>
+                                   <tr>
+                                       <td>&lt; h1 to h6 &gt;</td>
+                                       <td>Define headings 1 to 6</td>
+                                   </tr>
+                                   <tr>
+                                       <td>&lt; p &gt;</td>
+                                       <td>Define a paragraph</td>
+                                   </tr>
+                                   
+                                   
+                                   <tr>
+                                       <td>&lt; br &gt;</td>
+                                       <td> Define single break line </td>
+                                   </tr>
+                                   <tr>
+                                       <td>&lt; hr &gt;</td>
+                                       <td>Define horizontal line</td>
+                                   </tr>
+                                   <tr>
+                                       <td>&lt; !-- ... -- &gt;</td>
+                                       <td>Define Comment</td>
+                                   </tr>
+                               </tbody>
+                           </table>
+                       </div>
+                       
                            <div class="col-lg-4 mx-auto d-block">
                                <button class="btn btn-success">
                                    <a href="https://www.w3schools.com/tags/default.asp" text-white target="_blank" class="text-light" style="text-decoration: none;">Click to View HTML all tags.</a>
                                </button>
                            </div>
-                            <div class="col-lg-4 mx-auto">
-                               <button class="btn btn-info">
-                                   <a href="https://www.w3schools.com/tags/ref_httpmessages.asp" text-white target="_blank" class="text-light" style="text-decoration: none;">View Error Messages Detail</a>
-                               </button>
-                           </div>
-                       </div>
                     </div>
                 </div>
             </div>
@@ -247,6 +369,77 @@
                 <div class="row">
                     <div class="col-lg-10 mx-auto">
                         <h2>CSS?</h2>
+                        <p class="lead">
+                        CSS stands for Cascading Style Sheets. <br>
+                        CSS describes how HTML elements are to be displayed.
+                        </p>
+                        
+                        <br>
+                        <h2>CSS Syntax</h2>
+                        <p class="lead">A CSS rule consists of a selector and a declaration block: <br>
+                        <b class="def-heading">Selector</b> may be HTML tag, id &amp; class <br>
+                        <b class="def-heading">Declaration Block</b> in curly braces contains one or more declarations separated by semicolons. <br>
+                        <b class="def-heading">Declaration</b> includes a CSS property name and a value, separated by a colon.<br>
+                        </p>
+                        
+                        <div class="col-lg-6 mx-auto">
+                        <img class="col-lg-12" src="assets/img/img_selector.jpg" alt="">
+                        </div>
+                        <br>
+                        <h2>How to add CSS with HTML?</h2>
+                        <p class="lead">There are 3 ways to attach CSS with HTML.</p>
+                        
+                        <ul>
+                            <li><b class="def-heading">Inline:</b> CSS use by "style" attribute.
+                                <ul>
+                                    <li>Example: <pre class="def-topic">&lt;p style="color:red;"&gt;</pre></li>
+                                </ul> 
+                            </li>
+                            <li><b class="def-heading">Internal:</b> the internal style is defined inside the <code>&lt;style&gt;</code> element, inside the <code>&lt;head&gt;</code> section.
+                                <ul>
+                                    <li>Example:
+<pre class="def-topic">
+&lt;head&gt;
+    &lt;style&gt;
+        p { 
+            color:red;
+        } 
+    /&lt;style&gt;
+&lt;/head&gt;
+</pre>
+                                    </li>
+                                </ul> 
+                            </li>
+                            <li><b class="def-heading">External:</b> style sheet use by <code>&lt;link&gt;</code> tag inside <code>&lt;head&gt;</code> tag. External CSS file save with .css extension.
+                                <ul>
+                                    <li>Example:
+<pre class="def-topic">
+&lt;head&gt;
+    &lt;link href="/style.css"&gt;
+&lt;/head&gt;
+</pre>
+                                    </li>
+                                </ul> 
+                            </li>
+                        </ul>
+                        
+                        <br>
+                        <h2>CSS Comment</h2>
+                        <p class="lead">A CSS comment starts with <code>/*</code> and ends with <code>*/</code></p>
+                        
+                        <br>
+                        <h2>CSS Padding &amp; Margin</h2>
+                        <p class="lead">
+                            
+                            <b class="def-heading">Padding: </b>properties are used to generate space around an element's content, inside of any defined borders. 
+                            <br>
+                            <b class="def-heading">Margin: </b>properties are used to create space around elements, outside of any defined borders.
+                        </p>
+                        
+                        
+                        <div class="col-lg-6 mx-auto">
+                            <img src="assets/img/paddin-margin.png" alt="" class="col-lg-12">
+                        </div>
                     </div>
                 </div>
             </div>
