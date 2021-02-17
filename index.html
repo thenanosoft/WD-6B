@@ -1170,7 +1170,207 @@ print $x + $y;
                 <div class="row">
                     <div class="col-lg-10 mx-auto">
                         <h2>My SQL?</h2>
+                        <p class="lead">MySQL is the most popular database system used with PHP. The data in a MySQL database are stored in tables. A table is a collection of related data, and it consists of columns and rows. Databases are useful for storing information.</p>
+                        
+                        <ul>
+                            <li>MySQL Open Source &amp; Free</li>
+                            <li>Easy to use</li>
+                            <li>Very Popular</li>
+                        </ul>
+                        
+                        <br>
+                        <div>
+                            <h2>Points | What is MySQL?</h2>
+                            <p>MySQL is a database system used on the web.</p>
+                            <p>MySQL is a database system that runs on a server.</p>
+                            <p>MySQL is ideal for both small and large applications.</p>
+                            <p>MySQL is very fast, reliable, and easy to use.</p>
+                            <p>MySQL uses standard SQL.</p>
+                            <p>MySQL compiles on a number of platforms.</p>
+                            <p>MySQL is free to download and use.</p>
+                            <p>MySQL is developed, distributed, and supported by Oracle Corporation.</p>
+                            <p>MySQL is named after co-founder Monty Widenius's daughter. My</p>
+                        </div>
+                        
+                        <br>
+                        <div>
+                            <h2>Basic Terminologies</h2>
+                            <ul>
+                                <li>Database</li>
+                                <li>Table</li>
+                                <li>Column</li>
+                                <li>Row</li>
+                                <li>Field</li>
+                                <li>Index</li>
+                                <li>Foreign Key</li>
+                            </ul>
+                        </div>
+                        
+                        <br>
+                        <div>
+                            <h2>Difference b/w Database &amp; Spreadsheet</h2>
+                            <ul>
+                            <li><b class="def-heading">Spreadsheets:</b> are optimized for adding numbers.</li>
+                            <li><b class="def-heading">Database: </b>are optimized for working data.</li>
+                            </ul>
+                        </div>
+                        
+                        <br>
+                        <div>
+                            <h2>What is CRUD</h2>
+                            <ul>
+                            <li><b class="def-heading">C: </b>Create</li>
+                            <li><b class="def-heading">R: </b>Read</li>
+                            <li><b class="def-heading">U: </b>Update</li>
+                            <li><b class="def-heading">D: </b>Delete</li>
+                            </ul>
+                        </div>
+                        
+                        <br>
+                        <div>
+                            <h2>Manipulating MySQL Databases</h2>
+                            <ul>
+                            <li><b class="def-heading">Select</b></li>
+                            <li><b class="def-heading">Insert</b></li>
+                            <li><b class="def-heading">Delete</b></li>
+                            <li><b class="def-heading">Update</b></li>
+                            </ul>
+                        </div>
+                        
+                        <br>
+                        <div>
+                            <h2>PHP Connect to MySQL</h2>
+                            <p class="lead">PHP 5 and later can work with a MySQL database using:
+                                <li>MySQL extension (Original MySQL API)</li>
+                            
+                                <li>MySQLi extension (the "i" stands for improved API)</li>
+                            
+                                <li>PDO (PHP Data Objects)</li>
+                           </p>
+                           
+                            <h4>Steps for Connection PHP to Database</h4>
+                                <p>
+                                   <li>Create a database connection</li>
+                                   <li>Perform database query</li>
+                                   <li>Use returned data (if want)</li>
+                                   <li>Release returned data</li>
+                                   <li>Close database connection</li>
+                                </p>
+                                
+                            <h4>Function for Connection</h4>
+                                <code>
+                                   <li>mysqli_connect()</li>
+                                   <li>mysqli_connect_errorno()</li>
+                                   <li>mysqli_connect_error()</li>
+                                   <li>mysqli_close()</li>
+                                </code>
+                            
+                            <br>
+                            <h4>Creating &amp; Checking database connection</h4>
+                                <code>
+                                   &lt;?php <br>
+                                    $servername = "localhost"; <br>
+                                    $username = "username"; <br>
+                                    $password = "password"; <br>
+
+                                    // Create connection <br>
+                                    $conn = mysqli_connect($servername, $username, $password, $databasename); <br>
+
+                                    // Check connection <br>
+                                    if (!$conn) { <br>
+                                      die("Connection failed: " . mysqli_connect_error()); <br>
+                                    } <br>
+                                    echo "Connected successfully"; <br>
+                                    ?&gt; <br>
+                                </code>
+                                
+                            <br>
+                            <h4>Only checking database connection</h4>
+                                <code>
+                                   &lt;?php <br>
+                                    $conn = mysqli_connect($servername, $username, $password, $databasename); <br>
+
+                                    // Check connection <br>
+                                    if (mysqli_connect_errno()) { <br>
+                                       die("Connection Field"); <br>
+                                    } <br>
+                                    else { <br>
+                                        echo("Connection Established"); <br>
+                                    } <br>
+                                    ?&gt;
+                                </code>
+                                
+                            <br><br>
+                            <h4>Closing database connection</h4>
+                                <code>
+                                   &lt;?php <br>
+                                        mysqli_close($conn); <br>
+                                    ?&gt; <br>
+                                </code>
+                                
+                            <br>
+                            <h4>Function for query database</h4>
+                                    <li>mysqli_query()</li>
+                                    <ul>
+                                        <code>
+                                            &lt;?php <br>
+                                             
+                                            // Perform query <br>
+                                            $query = "SELECT * FROM Persons"; <br>
+                                            $result = mysqli_query($con, $query); <br>
+                                            if (!($result)) { <br>
+                                                die("database query failed."); <br>
+                                            } <br>
+                                            else { <br>
+                                                echo("database query passed."); <br>
+                                            } <br>
+                                            
+                                            ?&gt; <br>
+                                        </code>
+                                    </ul>
+                                    <li>mysqli_fetch_row()</li>
+                                    <ul>
+                                        <code>
+                                            &lt;?php <br>
+                                                &lt;body&gt; <br>
+                                                    while($row = mysqli_fetch_row($result)){ <br>
+                                                        var_dump($row); <br>
+                                                        echo “&lt;hr /&gt;; <br>
+                                                    } <br>
+                                                &lt;/body&gt; <br>
+                                            ?&gt; <br>
+                                        </code>
+                                    </ul>
+                                    <li>mysqli_free_result() [release return data]</li>
+                                    <ul>
+                                        <code>
+                                            &lt;?php <br>
+                                                mysqli_free_result($result); <br>
+                                            ?&gt; <br>
+                                        </code>
+                                    </ul>
+                        </div>
+                        
+                        <br>
+                        <div>
+                            <h2>Query Details:</h2>
+                            <li><b class="def-heading">mysqli_query()</b>: The mysqli_query() function accepts a string value representing a query as one of the parameters and, executes/performs the given query on the database.</li>
+                            <code>mysqli_query($conn, $query)</code>
+                            <br><br>
+                            <li><b class="def-heading">mysqli_fetch_row()</b>: function fetches one row from a result-set and returns it as an enumerated array.</li>
+                            <code>mysql_fetch_row($result);</code>
+                            <br><br>
+                            <li><b class="def-heading">mysqli_fetch_assoc()</b>: Fetch a result row as an associative array.</li>
+                            <code>mysqli_fetch_assoc($result)</code>
+                            <br><br>
+                            <li><b class="def-heading">mysqli_fetch_array()</b>: Fetch a result row as a numeric array and as an associative array.</li>
+                            <code>mysqli_fetch_assoc($result, $resulttype)</code>
+                            <br>
+                            where <code>$result</code> is mysql query &amp; connection "result", and <code>$resulttype</code> Specifies what type of array that should be produced.
+                        </div>
                     </div>
+                    
+                    
                 </div>
             </div>
         </section>
